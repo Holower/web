@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!--este fue necesario para el footer trabaja con 4.0-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--este fue necesario para los iconos de glyphicon-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stylefooter.css">
+    <link rel="stylesheet" href="css/stylebody.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+<div class="fondoheder">
+ <img src="images/banner.png" alt="error al cargar">
+</div>
+<div class="topnav" id="myTopnav">
+  <a href="index.html"><span class="glyphicon glyphicon-home"></span> Inicio</a>
+  <a href="register.html" class="active"><span class="glyphicon glyphicon-pencil"></span> Registro</a>
+  <a href="envios.html"><span class="glyphicon glyphicon-envelope"> Envios</a>
+  <a href="listado.html"><span class="glyphicon glyphicon-list-alt"> Listado</a>
+  <a href="ingreso.html"><span class="glyphicon glyphicon-log-in"> Ingreso</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Registro Cliente</legend>
+<div>
+  <a href="registerEmpleado.html">Registro de empleado</a>
+</div>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Nombres</label>
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="text" placeholder="John" class="form-control input-md" required="">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Apellidos</label>
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="text" placeholder="Smith" class="form-control input-md" required="">
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Genero</label>
+  <div class="col-md-4">
+    <input type="radio" name="gender" id="gender" tabindex="2" placeholder="Gender"> Hombre
+    <input type="radio" name="gender" id="gender" tabindex="2" placeholder="Gender"> Mujer
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="selectbasic">Selecciona Tu país</label>
+  <div class="col-md-4">
+    <select id="selectbasic" name="selectbasic" class="form-control">
+      <option value="1">Colombia</option>
+      <option value="2">Otro</option>
+    </select>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="email">E-mail</label>
+  <div class="col-md-4">
+  <input id="email" name="email" type="text" placeholder="john.smith@mail.com" class="form-control input-md" required="">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="direccioninput">Direccion</label>
+  <div class="col-md-4">
+  <input id="direccion" name="direccion" type="text" placeholder="av  xxxxxxxx" class="form-control input-md" required="">
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="passwordinput">Password</label>
+  <div class="col-md-4">
+    <input id="passwordinput" name="passwordinput" type="password" placeholder="Enter your password" class="form-control input-md" required="">
+
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="passwordinput">Repeat password </label>
+  <div class="col-md-4">
+    <input id="passwordinput" name="passwordinput" type="password" placeholder="Repeat your password" class="form-control input-md" required="">
+
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="singlebutton"></label>
+  <div class="col-md-4">
+    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Register</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+    <!-- Footer -->
+    	<section id="footer">
+    		<div class="container">
+    			<div class="row text-center text-xs-center text-sm-left text-md-left">
+    				<div class="col-xs-12 col-sm-3 col-md-3">
+    					<h5><span class="glyphicon glyphicon-user"></span> Quienes Somos</h5>
+    					<ul class="list-unstyled quick-links">
+    						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Somos tu parnert</a></li>
+    					</ul>
+    				</div>
+    				<div class="col-xs-12 col-sm-3 col-md-3">
+    					<h5><span class="glyphicon glyphicon-envelope"></span> Contacta con Nosonotros</h5>
+              <p>Illarra bidea 4
+                 20008 Donostia -
+                 San Sebastián
+                 902 335 333
+              </p>
+    				</div>
+            <div class="col-xs-12 col-sm-3 col-md-3">
+    					<h5><span class="glyphicon glyphicon-cog"></span> Nuestros Servicios</h5>
+    					<ul class="list-unstyled quick-links">
+    						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Marketing Relacional</a></li>
+    						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Marketing Promocional</a></li>
+    						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Servicios E-commerce</a></li>
+    						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Servicios Logísticos</a></li>
+    						<li><a href="https://www.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
+    					</ul>
+    				</div>
+            <div class="col-xs-12 col-sm-3 col-md-3">
+    					<h5><span class="glyphicon glyphicon-book"></span> Otros conceptos de interes</h5>
+    					<ul class="list-unstyled quick-links">
+    						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>RSC</a></li>
+    						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Lismi</a></li>
+    						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Aviso Legal</a></li>
+    						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Política de Cookies</a></li>
+    						<li><a href="https://www.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
+    					</ul>
+    				</div>
+    			</div>
+    			<div class="row">
+    				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+    					<ul class="list-unstyled list-inline social text-center">
+    						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+    						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+    						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+    						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+    						<li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+    					</ul>
+    				</div>
+    				</hr>
+    			</div>
+    			<div class="row">
+    				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+    					<p>TeEnviamosLoQueSea SAS</p>
+    					<p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Sunlimetech</a></p>
+    				</div>
+    				</hr>
+    			</div>
+    		</div>
+    	</section>
+    	<!-- ./Footer -->
+  </body>
+</html>
